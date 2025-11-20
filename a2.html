@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1()">click here</button>
+    <p id="time"></p>
+    <p id="result"></p>
+    <script>
+   function fun1(){
+   var msg;
+   var time= new Date().getHours();
+   if(time <10){
+   msg="Good Morninig";  
+   } else {
+   msg="Good Evening"
+   }
+  document.getElementById("time").innerHTML="The Time is:" + time;
+  document.getElementById("result").innerHTML = msg;
+
+   }
+
+
+
+
+    </script>
+</body>
+</html>
